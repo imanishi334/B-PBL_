@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./pbl.css">
+
+<title>詳細診断ツール</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>パソコン診断ツール</h2>
+  <h4>診断するボタンを押すと自動で価格.comのサイトに飛びます</h4>
+  <div class="question">
+    <label for="kaka">価格:</label>
+    <select id="kaka" name="kaka">
+      <option value="">選択してください</option>
+      <option value="0-100000">10万未満</option>
+      <option value="100000-150000">10万～15万</option>
+      <option value="150000-">15万以上</option>
+    </select>
+  </div>
+  <div class="question">
+    <label for="omos">重さ:</label>
+    <select id="omos" name="omos">
+      <option value="">選択してください</option>
+      <option value="-1.0">1.0キロ未満</option>
+      <option value="1.0-1.5">1.0キロ～1.5キロ</option>
+      <option value="1.5-2.0">1.5キロ～2キロ未満</option>
+    </select>
+  </div>
+  <div class="question">
+    <label for="cpuse" >CPU世代:</label>
+    <select id="cpuse" name="cpuse">
+      <option value="">選択してください</option>
+      <option value="20">12世代</option>
+      <option value="23">13世代</option>
+      <option value="25">14世代</option>
+    </select>
+  <div class="question">
+    <label for="cpu" >CPU:</label>
+    <select id="cpu" name="cpu">
+      <option value="">選択してください</option>
+      <option value="41">core i3</option>
+      <option value="40">core i5</option>
+      <option value="39">core i7</option>
+    </select>
+    <div class="jamper">
+      <button class="jamp" onclick="location.href='syo-kai/cpu.html'">cpuについて</button>
+    </div>
+  </div>
+  <div class="question">
+    <label for="ref">リフレッシュレート:</label>
+    <select id="ref" name="ref">
+      <option value="">選択してください</option>
+      <option value="90">90Hz</option>
+      <option value="120">120Hz</option>
+      <option value="144">144Hz</option>
+      <option value="165">165Hz</option>
+    </select>
+  </div>
+  <div class="question">
+    <label for="memo">メモリ:</label>
+    <select id="memo" name="memo">
+      <option value="">選択してください</option>
+      <option value="8">8GB</option>
+      <option value="16">16GB</option>
+    </select>
+  </div>
+  <div class="question">
+    <label for="suto">ストレージ:</label>
+    <select id="suto" name="suto">
+      <option value="">選択してください</option>
+      <option value="256">256GB</option>
+      <option value="512">512GB</option>
+      <option value="1000">1TB</option>
+    </select>
+    <div class="jamper">
+      <button class="jamp" onclick="location.href='syo-kai/suto.html'">ストレージについて</button>
+    </div>
+  </div>
+
+  <button class="button" onclick="diagnose()">診断する</button>
+  
+  <div id="result"></div>
+  
+</div>
+<div class = "container">
+  <h4>用途で選ぶ</h4>
+  <div class="question">
+    <label for="youto">用途</label>
+    <select id="youto" name="youto">
+      <option value="">選択してください</option>  
+      <option value="gaku">学習</option>
+      <option value="job">仕事</option>
+      <option value="gemu">ゲーム</option>
+      <option value="douga">動画編集</option>
+    </select>
+  </div>
+
+  <button class="button" onclick="diagnose2()">診断する</button>
+  <div id="result2"></div>
+</div>
+
+<script src="./pbl.js" ></script>
+
+</body>
+</html>
