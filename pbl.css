@@ -1,0 +1,151 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+#header_menu {
+  position: fixed;
+  background-color: rgba(110,169,36,0.78);
+  width:  auto;
+  top: 10px;
+  right: 10px;
+  z-index: 10000;
+}
+#header_menu a {
+  float: left; /*メニューを横並びにする*/
+  font-size: 16px;
+  color: #FFF;
+  padding: 10px;
+}
+#header_menu a:after { /*floatでデザインが崩れないように*/
+  display:block;
+  clear: both;
+  content:"";
+  }
+h2{
+  font-size: calc(1.20vw + 1.5rem);
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+h3 {
+	/* SP:2rem | TB:2.5rem | PC:3rem */
+	font-size: calc(0.50vw + 1.3rem);
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+}
+h4{
+  font-size: calc(0.50vw + 1.3rem);
+  position: relative;
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+p {
+	 /* SP:1.4rem | TB:1.5rem | PC:1.6rem */
+	font-size: calc(0.05vw + 1.1rem);
+  
+  margin-top:10px ;
+}
+a{
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  text-decoration: none;
+}
+
+a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #31aae2;
+  transition: .3s;
+  transform: translateX(-50%);
+}
+
+a:hover::after{
+  width: 100%;
+}
+.mokuji{
+  padding: auto;
+  margin: auto;
+}
+.help{
+  padding: 20px;
+  margin: 10px;
+}
+#box{
+  width: auto;
+  height:  auto;
+  padding: 20px ;
+  border: 1px solid gray;
+  background-color: rgb(210, 232, 247);
+  box-sizing: border-box;
+}
+#box li {
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.container {
+  width: 600;
+  margin: 10px auto;
+  
+  padding: 10px ;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.jamper{
+  text-align: right; 
+  margin: 5px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+.question label {
+  display: block;
+  margin-bottom: 5px;
+}
+.question input[type="text"],
+.question select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #4cae4c;
+}
+#result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  display: none;
+}
+  
