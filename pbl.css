@@ -177,7 +177,7 @@ li {
     background:  #00e664;
     color: white;
 }
-.dropdown ul a:hover {
+.dropdown li a:hover {
   background:  #00e664;
   color: white;
 }
