@@ -150,9 +150,7 @@ a:hover::after{
 }
   
 /* リストの点や番号を完全に消す */
-.dropdown ul, 
-.dropdown ol, 
-.dropdown li {
+.dropdown ul {
     list-style: none;  /* 点や数字を消す */
     padding: 0;
     margin: 0;
