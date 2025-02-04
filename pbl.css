@@ -183,4 +183,7 @@ li {
   background:  #00e664;
   color: white;
 }
+.dropdown li a {  /* 修正: `ul a` ではなく、`li a` に適用 */
+    text-decoration: none;
+    display:
 
