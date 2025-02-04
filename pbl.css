@@ -149,32 +149,38 @@ a:hover::after{
   display: none;
 }
   
-ul {
+ul,ol {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+/* メニュー全体のデザイン */
 li {
-  position: relative;
+    position: relative;
 }
+
 /* サブメニューのスタイル */
 .dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  border: 1px solid #ccc;
-  width: 150px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    width: 150px;
 }
+
+/* メニューのリンク */
 .dropdown li a {
-  text-decoration: none;
+    text-decoration: none;
     display: block;
     padding: 10px;
-    background: #00e664;
-    color: white;
+    background: #00e664; /* 背景色 */
+    color: black;  /* 文字色を黒に変更 */
 }
+
+/* ホバー時のデザイン */
 .dropdown li a:hover {
-  background: #00e664;
-  color: white;
+    background: #00b750;
+    color: white;
 }
