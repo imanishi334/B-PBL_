@@ -156,9 +156,11 @@ a:hover::after{
     list-style: none;  /* 点や数字を消す */
     padding: 0;
     margin: 0;
-	position: relative;
+	
 }
-
+li {
+    position: relative;
+}
 
 /* サブメニューのスタイル */
 .dropdown {
