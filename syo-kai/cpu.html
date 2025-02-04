@@ -9,13 +9,16 @@
 <header>
     <div id="header_menu" class="container">
     <nav>
-        <ul>
-            <a href="../">もどる</a>
-            <a href="#">Home</a>
-            <a href="#cpu1">CPUとは</a>
-            <a href="#cpu2">CPUの見方</a>
-            <a href="#cpu3">core i について</a>
-        </ul>
+        <li>
+                    <a href="#" id="menuToggle">メニュー…</a>
+                    <ul class="dropdown" id="dropdownMenu">
+                        <li><a href="../">もどる</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#cpu1">CPUとは</a></li>
+                        <li><a href="#cpu2">CPUの見方</a></li>
+                        <li><a href="#cpu3">core i について</a></li>
+                    </ul>
+                </li>
       </nav>
     </div>
 </header>
@@ -83,3 +86,23 @@
     </div>
 </body>
 </html>
+<script>
+    document.getElementById("menuToggle").addEventListener("click", function(event) {
+        event.preventDefault(); // デフォルトのリンク動作を防ぐ
+        var dropdown = document.getElementById("dropdownMenu");
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+        } else {
+            dropdown.style.display = "block";
+        }
+    });
+    document.addEventListener("click", function(event) {
+    var menu = document.getElementById("menuToggle");
+    var dropdown = document.getElementById("dropdownMenu");
+
+    // クリックした要素がメニューやドロップダウンの外なら閉じる
+    if (!menu.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.style.display = "none";
+    }
+});
+    </script>
