@@ -149,17 +149,14 @@ a:hover::after{
   display: none;
 }
   
-/* リストの点や番号を完全に消す */
-.dropdown ul {
-    list-style: none;  /* 点や数字を消す */
-    padding: 0;
-    margin: 0;
-	
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 li {
-    position: relative;
+  position: relative;
 }
-
 /* サブメニューのスタイル */
 .dropdown {
   display: none;
@@ -170,19 +167,14 @@ li {
   border: 1px solid #ccc;
   width: 150px;
 }
-.dropdown ul a {
+.dropdown li a {
   text-decoration: none;
     display: block;
     padding: 10px;
-    background:  #00e664;
+    background: #00e664;
     color: white;
 }
 .dropdown li a:hover {
-  background:  #00e664;
+  background: #00e664;
   color: white;
 }
-.dropdown li a {  /* 修正: `ul a` ではなく、`li a` に適用 */
-    text-decoration: none;
-    display:
-	    }
-
